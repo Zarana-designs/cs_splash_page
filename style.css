@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 95%;
+    max-width: 1700px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.links a {
+    display: block;
+    margin: 10px 0;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    margin-top: 20px;
+    color: #777;
+}
+
+.tableau-dashboard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+
+.tableau-dashboard iframe {
+    border: none;
+    width: 1650px;
+    height: 1900px;
+    transform-origin: top left;
+    transform: scale(1);
+}
+
+@media (max-width: 1650px) {
+    .tableau-dashboard iframe {
+        transform: scale(calc(100% / 1650));
+    }
+}
+
+@media (max-height: 1900px) {
+    .tableau-dashboard iframe {
+        transform: scale(calc(100% / 927));
+    }
+}
